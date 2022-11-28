@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="icon" href="images/favicon.png" type="image/png">
-
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   <!-- build:css -->
   <link rel="stylesheet" href="node_modules/dropzone/dist/dropzone.css">
@@ -29,17 +27,11 @@
   <!-- Navigation Header -->
   <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img class="d-inline-block align-top" src="images/logo.png" alt="">
-      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a id="swu-restart" class="nav-link" href="#"><i class="fas fa-sync"></i> Restart System</a>
-          </li>
         </ul>
       </div>
     </div>
@@ -49,9 +41,9 @@
   <div class="container">
     <!-- Header -->
     <div class="jumbotron my-3">
-      <h1 class="display-4"><span class="text-primary">SW</span>Update</h1>
+      <h1 class="display-4"><span class="text-primary">Software</span>Update</h1>
       <p class="lead">Software update for embedded systems</p>
-      <p>Upload a software image below, or restart the system at the top right corner.</p>
+      <p>Upload a software image below.</p>
     </div>
 
     <div class="row my-3">
@@ -83,7 +75,7 @@
               <i class="fas fa-times-circle"></i> Update failed.
             </div>
             <div id="swu-done" class="alert alert-info" style="display: none;">
-              <i class="fas fa-sync"></i> Restarting system.
+              <i class="fas fa-sync"></i> Update complete, please restart system.
             </div>
 
             <!-- Progress -->
@@ -123,7 +115,7 @@
             <div class="media">
               <i class="fas fa-spinner fa-spin fa-3x align-self-center mr-3"></i>
               <div class="media-body align-self-center">
-                <h5 class="mt-0 mb-0">The system will restart. Please be patient, as restarting takes about one minute.</h5>
+                <h5 class="mt-0 mb-0">The system will restart, please be patient.</h5>
               </div>
             </div>
           </div>
